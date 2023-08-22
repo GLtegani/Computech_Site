@@ -12,39 +12,55 @@ CEDEBD verde mto claro
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+/* body */
+
+body {
+  height: 100vh;
+}
+
+/* page */
+.page {
+  width: 100%;
+  max-width: 588px;
+  margin: auto;
+  padding: auto;
 }
 
 /* header */
 
-#inicio .logo-page {
-  width: 100px;
-  padding-right: 24px;
-}
-
 #inicio {
-  background-color: rgb(31, 28, 28);
-  margin: auto;
-  padding: 10px 20px;
+  background-color: rgb(19, 17, 17);
+  width: 100%;
+  padding: 12px 24px 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #faf1e4;
-  font-weight: bold;
+  position: fixed;
 }
+
+#inicio .logo-page {
+  width: 100px;
+  padding-left: 24px;
+}
+
 #inicio ul {
+  margin: 0;
+  padding-left: 0px;
   display: flex;
-  gap: 18px;
-  padding: auto;
-}
-#inicio ul li {
   list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+#inicio nav {
+  padding-right: 500px;
 }
 
 #inicio ul li a {
   text-decoration: none;
   color: #faf1e4;
-  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -53,63 +69,102 @@ CEDEBD verde mto claro
   color: #5c8374;
 }
 
+/* contact header */
+
 .call-icon {
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 25px;
+  color: #faf1e4;
 }
 
 .number {
-  padding-right: 45px;
+  color: #faf1e4;
+  font-weight: bold;
+}
+.wpp-icon {
+  font-size: 21px;
+  color: #faf1e4;
+  padding-left: 40px;
 }
 
-.location-icon {
-  font-size: 18px;
-}
-
-.location {
-  padding-right: 40px;
+.number-wpp {
+  color: #faf1e4;
+  font-weight: bold;
+  padding-right: 20px;
 }
 
 /* page, quem somos */
 
 #quem-Somos .bg-quem-somos {
   background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
-  padding: 180px;
+  padding: 230px;
 }
 
 .bg-quem-somos h1 {
   display: flex;
-  font-size: 48px;
+  font-size: 60px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
+/* containers quem somos */
+
 #container-quem-somos {
   display: flex;
-  margin: 48px 40px 50px;
+  margin: 48px 40px 60px;
   gap: 30px;
 }
 
+#container-quem-somos h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#container-quem-somos p {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* container equipe */
+
+#container-quem-somos .container-equipe span {
+  color: #a2e0c9;
+}
 #container-quem-somos .container-equipe {
   border: 1px #183d3d;
   border-style: outset ridge;
-  padding: 40px 40px 150px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* container filosofia */
+
+#container-quem-somos .container-filosofia h2 span {
+  color: #183d3d;
 }
 
 #container-quem-somos .container-filosofia {
   border: 1px;
   border-style: solid outset;
-  padding: 40px 40px 150px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 10px;
   background-color: black;
   color: white;
+}
+
+/* container abordagem */
+
+#container-quem-somos .container-abordagem span {
+  color: #a2e0c9;
 }
 
 #container-quem-somos .container-abordagem {
   border: 1px #183d3d;
   border-style: outset ridge;
-  padding: 40px 40px 150px;
-  border-radius: 8px;
+  padding: 40px 40px 80px;
+  border-radius: 10px;
 }
