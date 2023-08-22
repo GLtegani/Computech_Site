@@ -119,11 +119,11 @@ body {
 
 #container-quem-somos h2 {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 #container-quem-somos p {
-  text-align: center;
+  text-align: left;
   padding-top: 15px;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
