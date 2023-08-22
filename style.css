@@ -1,0 +1,115 @@
+/* css colors
+colocar hash antes
+040D12 preto
+183D3D verde escuro
+5C8374 um verde meio escuro
+93B1A6 verde claro
+FAF1E4 branco
+CEDEBD verde mto claro
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* header */
+
+#inicio .logo-page {
+  width: 100px;
+  padding-right: 24px;
+}
+
+#inicio {
+  background-color: rgb(31, 28, 28);
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #faf1e4;
+  font-weight: bold;
+}
+#inicio ul {
+  display: flex;
+  gap: 18px;
+  padding: auto;
+}
+#inicio ul li {
+  list-style: none;
+}
+
+#inicio ul li a {
+  text-decoration: none;
+  color: #faf1e4;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+#inicio ul li a:hover {
+  font-weight: bold;
+  color: #5c8374;
+}
+
+.call-icon {
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+.number {
+  padding-right: 45px;
+}
+
+.location-icon {
+  font-size: 18px;
+}
+
+.location {
+  padding-right: 40px;
+}
+
+/* page, quem somos */
+
+#quem-Somos .bg-quem-somos {
+  background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
+  padding: 180px;
+}
+
+.bg-quem-somos h1 {
+  display: flex;
+  font-size: 48px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#container-quem-somos {
+  display: flex;
+  margin: 48px 40px 50px;
+  gap: 30px;
+}
+
+#container-quem-somos .container-equipe {
+  border: 1px #183d3d;
+  border-style: outset ridge;
+  padding: 40px 40px 150px;
+  border-radius: 8px;
+}
+
+#container-quem-somos .container-filosofia {
+  border: 1px;
+  border-style: solid outset;
+  padding: 40px 40px 150px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+#container-quem-somos .container-abordagem {
+  border: 1px #183d3d;
+  border-style: outset ridge;
+  padding: 40px 40px 150px;
+  border-radius: 8px;
+}

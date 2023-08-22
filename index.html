@@ -1,76 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computech Solutions</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <img
-        class="logo-page"
-        src="./assets/Logo_Site_tranparente.png"
-        alt="Logo da empresa Computech Solutions."
-      />
+    <header id="inicio">
+      <a href="#inicio"
+        ><img
+          class="logo-page"
+          src="./assets/Logo_Site_tranparente.png"
+          alt="Logo da empresa Computech Solutions."
+      /></a>
+
       <nav>
-        <a href="#">Início</a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li>
+            <a href="#quem-Somos">Quem Somos</a>
+          </li>
+          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
       </nav>
+      <ul>
+        <span class="call-icon">
+          <ion-icon name="call-sharp"></ion-icon>
+        </span>
+        <li class="number">(11) 3681-3156</li>
+      </ul>
     </header>
 
     <main>
-      <div id="Quem-Somos">
-        <h1 id="title-Quem-Somos">Quem somos</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-          animi doloremque laboriosam excepturi quos. Corporis soluta possimus
-          delectus placeat tempora totam ut, nam ratione facilis unde
-          consectetur hic commodi tenetur.
-        </p>
-      </div>
+      <section id="page">
+        <!-- Quem somos -->
+        <div id="quem-Somos">
+          <div class="bg-quem-somos">
+            <h1>Quem Somos</h1>
+          </div>
 
-      <div id="Serviços">
-        <h1 id="title-Serviços">Serviços</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut iste
-          architecto dolorum non placeat excepturi nulla numquam, consectetur
-          tempore vitae molestiae veritatis eaque, distinctio eos ipsum ducimus
-          velit beatae.
-        </p>
-      </div>
+          <section id="container-quem-somos">
+            <div class="container-equipe">
+              <h2>Nossa Equipe</h2>
+              <p>
+                A equipe por trás da Computech Solutions é formada por
+                entusiastas da inovação tecnológica. Acreditamos que cada
+                desafio tecnológico pode ser transformado em uma oportunidade
+                empolgante, e estamos aqui para guiar você nessa jornada.
+                Combinamos anos de experiência e um olhar atento às tendências
+                emergentes para oferecer soluções que abrem portas para a
+                eficiência, produtividade e entretenimento digital de alta
+                qualidade.
+              </p>
+            </div>
+            <div class="container-filosofia">
+              <h2>Nossa Filosofia</h2>
+              <p>
+                Nossa filosofia é enraizada na crença de que a tecnologia é o
+                catalisador para mudanças positivas. Combinamos nossa expertise
+                em diversas áreas da tecnologia com uma visão afiada das
+                tendências emergentes para criar soluções que não apenas atendam
+                às necessidades atuais, mas também antecipem as demandas
+                futuras. Acreditamos que a inovação não é apenas uma meta, mas
+                um estado de espírito que nos motiva a questionar, explorar e
+                reinventar constantemente.
+              </p>
+            </div>
+            <div class="container-abordagem">
+              <h2>Nossa Abordagem</h2>
+              <p>
+                Na Computech Solutions, nossa abordagem é centrada no cliente e
+                orientada para resultados. Não oferecemos apenas produtos e
+                serviços; oferecemos parcerias duradouras baseadas na
+                compreensão profunda das metas e desafios de nossos clientes.
+                Colaboramos ativamente, desde a fase de concepção até a
+                implementação e o suporte contínuo. Acreditamos que, ao unir
+                nossa experiência à visão única de cada cliente, podemos
+                alcançar soluções verdadeiramente inovadoras.
+              </p>
+            </div>
+          </section>
+        </div>
 
-      <div id="Contato">
-        <h1 id="title-Contato">Contato</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          facere pariatur dolore quasi distinctio praesentium perferendis
-          aliquam iusto error consequuntur dicta, aspernatur eligendi.
-          Consequatur molestiae vitae cupiditate maiores magnam repellat.
-        </p>
-      </div>
+        <!-- Nossos serviços -->
+        <div id="serviços">
+          <h1 id="title-Serviços">Serviços</h1>
+
+          <h3>Montagem de PCs Sob Medida:</h3>
+          <p>
+            Quer você seja um gamer entusiasta ou um profissional que exige alta
+            performance, projetamos e montamos PCs personalizados que atendem
+            exatamente às suas necessidades. Desde a escolha dos componentes até
+            a montagem cuidadosa, garantimos um sistema que se destaca em
+            desempenho e confiabilidade.
+          </p>
+
+          <h3>Formatação de PCs com Precisão:</h3>
+          <p>
+            Quando seu sistema precisa de uma nova começar, estamos aqui para
+            executar formatações eficientes que eliminam problemas e trazem um
+            novo fôlego à sua máquina. Seja para melhorar o desempenho ou limpar
+            o sistema, nossa formatação é feita com cuidado e precisão.
+          </p>
+
+          <h3>Upgrade para Novas Possibilidades:</h3>
+          <p>
+            À medida que a tecnologia avança, você também pode. Nossos serviços
+            de upgrade revitalizam seu PC, trazendo novos recursos e desempenho
+            aprimorado para acompanhar as demandas modernas.
+          </p>
+
+          <h3>Backup na Nuvem para Segurança:</h3>
+          <p>
+            Suas informações são valiosas e merecem proteção. Oferecemos
+            soluções de backup em nuvem confiáveis para manter seus dados
+            seguros e acessíveis, não importa o que aconteça.
+          </p>
+
+          <h3>Reparo Especializado em Placas:</h3>
+          <p>
+            Quando as coisas não vão bem em nível de placa, nossa equipe
+            experiente entra em ação. Realizamos reparos em placas com precisão,
+            identificando e corrigindo problemas para que seu hardware funcione
+            como deveria.
+          </p>
+          <h3>Remoção de Vírus e Proteção:</h3>
+          <p>
+            Mantenha seu sistema livre de ameaças. Nossos serviços abrangem
+            desde a remoção de vírus até a instalação de medidas de proteção
+            para garantir que você navegue e trabalhe com segurança.
+          </p>
+
+          <h3>Manutenção e Otimização de Redes:</h3>
+
+          <p>
+            Seja em casa ou no escritório, redes eficientes são essenciais.
+            Nossos especialistas cuidam da manutenção, otimização e resolução de
+            problemas em sua rede para garantir conectividade estável.
+          </p>
+          <h3>Suporte T.I. Remoto e Presencial:</h3>
+          <p>
+            Estamos sempre ao seu lado, independentemente da distância.
+            Oferecemos suporte técnico remoto e presencial para solucionar
+            problemas, responder perguntas e manter seu ambiente de tecnologia
+            funcionando sem problemas.
+          </p>
+          <h3>Impressão Gráfica Personalizada:</h3>
+          <p>
+            Além das soluções tecnológicas, também oferecemos serviços de
+            impressão gráfica sob medida. Nossa gráfica cria cartões de visita,
+            panfletos, etiquetas, impressões digitais, brindes, banners,
+            convites, receituários, recibos, comandas, ordens de serviço, imãs e
+            plotagens que refletem a sua identidade e necessidades.
+          </p>
+
+          <p>
+            Na Computech Solutions, nossos serviços são uma extensão do nosso
+            compromisso em oferecer soluções abrangentes para suas necessidades
+            tecnológicas e de impressão. Seja para otimizar seu sistema,
+            resolver problemas complexos ou criar materiais impressos
+            impressionantes, estamos prontos para atender a cada desafio com
+            dedicação e expertise.
+          </p>
+        </div>
+        <!-- Nosso Contato -->
+        <div id="contato">
+          <h1 id="title-Contato">Contato</h1>
+          <p>
+            11-94814-8960 <br />
+            11-3681-3156 <br />
+            R. Narciso Sturlini, 62 - 7° Andar - Sala 706 Centro - Osasco - SP
+          </p>
+        </div>
+        <!-- footer -->
+        <footer>
+          <img
+            class="logo-page"
+            src="./assets/Logo_Site_tranparente.png"
+            alt="Logo da empresa Computech Solutions"
+          />
+          <p>
+            &copy; Copyright 2023 - Computech Solutions - Todos os direitos
+            reservados.
+          </p>
+        </footer>
+      </section>
     </main>
-
-    <footer>
-      <img
-        class="logo-page"
-        src="./assets/Logo_Site_tranparente.png"
-        alt="Logo da empresa Computech Solutions"
-      />
-      <p>
-        &copy; Copyright 2023 - Computech Solutions - Todos os direitos
-        reservados.
-      </p>
-    </footer>
   </body>
+
+  <!-- scripts -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>
