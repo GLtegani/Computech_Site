@@ -156,13 +156,13 @@ body {
   color: white;
 }
 
-/* container abordagem */
+/* container conduta*/
 
-#container-quem-somos .container-abordagem span {
+#container-quem-somos .container-conduta span {
   color: #a2e0c9;
 }
 
-#container-quem-somos .container-abordagem {
+#container-quem-somos .container-conduta {
   border: 1px #183d3d;
   border-style: outset ridge;
   padding: 40px 40px 80px;
