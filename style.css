@@ -55,7 +55,7 @@ body {
 }
 
 #inicio nav {
-  padding-right: 500px;
+  padding-right: 300px;
 }
 
 #inicio ul li a {
@@ -117,9 +117,17 @@ body {
   gap: 30px;
 }
 
+#container-quem-somos .icon-quem-somos {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin: auto auto 30px;
+  padding: auto;
+}
+
 #container-quem-somos h2 {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 #container-quem-somos p {
@@ -144,7 +152,7 @@ body {
 /* container filosofia */
 
 #container-quem-somos .container-filosofia h2 span {
-  color: #183d3d;
+  color: #1f5252;
 }
 
 #container-quem-somos .container-filosofia {
