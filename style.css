@@ -29,8 +29,9 @@ body {
 }
 
 /* header */
+/* A propriedade z-index controla a ordem em que os elementos são empilhados na página. */
 
-#inicio {
+header {
   background-color: rgb(19, 17, 17);
   width: 100%;
   padding: 12px 24px 10px 0;
@@ -38,14 +39,15 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 2;
 }
 
-#inicio .logo-page {
+header .logo-page {
   width: 100px;
   padding-left: 24px;
 }
 
-#inicio ul {
+header ul {
   margin: 0;
   padding-left: 0px;
   display: flex;
@@ -54,17 +56,16 @@ body {
   align-items: center;
 }
 
-#inicio nav {
+header nav {
   padding-right: 300px;
 }
 
-#inicio ul li a {
+header ul li a {
   text-decoration: none;
   color: #faf1e4;
   font-weight: bold;
 }
-
-#inicio ul li a:hover {
+header ul li a:hover {
   font-weight: bold;
   color: #5c8374;
 }
@@ -93,11 +94,71 @@ body {
   padding-right: 20px;
 }
 
+/* page, inicio */
+
+#inicio .bg-inicio {
+  background: url(./assets/wallpaper-inicio.jpg) no-repeat top center/ cover;
+  padding: 200px;
+  position: relative;
+}
+
+#inicio .bg-inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  mix-blend-mode: multiply;
+}
+
+#inicio h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+#inicio h1 .title-inicio {
+  color: #ffd700;
+}
+
+#inicio p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+#inicio p .p-inicio {
+  color: #ffd700;
+}
+
 /* page, quem somos */
 
 #quem-Somos .bg-quem-somos {
   background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
-  padding: 230px;
+  padding: 210px;
+  position: relative;
+}
+
+#quem-Somos .bg-quem-somos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  mix-blend-mode: multiply;
 }
 
 .bg-quem-somos h1 {
@@ -107,6 +168,8 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 /* containers quem somos */
@@ -140,7 +203,7 @@ body {
 /* container equipe */
 
 #container-quem-somos .container-equipe span {
-  color: #a2e0c9;
+  color: #70a592;
 }
 #container-quem-somos .container-equipe {
   border: 1px #183d3d;
@@ -167,7 +230,7 @@ body {
 /* container conduta*/
 
 #container-quem-somos .container-conduta span {
-  color: #a2e0c9;
+  color: #70a592;
 }
 
 #container-quem-somos .container-conduta {
