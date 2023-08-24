@@ -101,6 +101,7 @@ header ul li a:hover {
   background: url(./assets/wallpaper-inicio.jpg) no-repeat top center/ cover;
   padding: 200px;
   position: relative;
+  height: 100vh;
 }
 
 #inicio .bg-inicio::before {
@@ -109,7 +110,7 @@ header ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -184,8 +185,9 @@ header ul li a:hover {
 
 #quem-somos .bg-quem-somos {
   background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
-  padding: 210px;
+  padding: 300px 0;
   position: relative;
+  height: 100vh;
 }
 
 #quem-somos .bg-quem-somos::before {
@@ -194,7 +196,7 @@ header ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -278,9 +280,29 @@ header ul li a:hover {
 
 /* page, nossos serviços */
 
-#servicos .title-servicos {
-  background: url(./assets/serviços.jpg) no-repeat top center/ cover;
-  font-size: 50px;
-  text-align: center;
-  padding: 50px 0 50px 0;
+#servicos .bg-servicos {
+  background: url(./assets/mao_globo.jpg) no-repeat top center/ cover;
+  padding: 300px 0;
+  position: relative;
+  height: 100vh;
+}
+
+#servicos .bg-servicos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-servicos h1 {
+  display: flex;
+  font-size: 60px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
 }
