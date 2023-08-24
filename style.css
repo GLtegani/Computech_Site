@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
 }
 
 header .logo-page {
@@ -96,6 +96,7 @@ header ul li a:hover {
 
 /* page, inicio */
 
+/* para escurecer um wallpaper de uma pagina, diga que a posição dela é relativa e em seguida faça um before do item (antes dele) e diga que a posição dele é absoluta (vai ser absoluta em relação somente ao wallpaper por ter aplicado uma posição relativa a ele), coloque um content vazio (content: "";) para que o conteudo do item seja vazio e apenas a cor que será aplicada, de um top e left 0 para aplicat o escurecimento em cima, embaixo e nas laterais, diga que ele vai ocupar 100% de altura e largura do seu wallpaper e dai você pode aplicar a transparencia/escurecimento no item com um rgba no final dele escurecendo o item. Após isso apenas aplique um position relative nos seus textos para que o escurecimento não se aplique a eles também.  */
 #inicio .bg-inicio {
   background: url(./assets/wallpaper-inicio.jpg) no-repeat top center/ cover;
   padding: 200px;
@@ -110,7 +111,6 @@ header ul li a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  mix-blend-mode: multiply;
 }
 
 #inicio h1 {
@@ -120,7 +120,6 @@ header ul li a:hover {
   margin-bottom: 10px;
   padding-bottom: 40px;
   position: relative;
-  z-index: 1;
 }
 
 #inicio h1 .title-inicio {
@@ -135,22 +134,61 @@ header ul li a:hover {
   line-height: 30px;
   padding-bottom: 40px;
   position: relative;
-  z-index: 1;
 }
 
 #inicio p .p-inicio {
   color: #ffd700;
 }
 
+/* page, nossa gráfica */
+#nossa-grafica {
+  padding: 50px 40px;
+}
+
+#nossa-grafica .bg-nossa-grafica {
+  border: 4px solid #70a592;
+  border-radius: 10px;
+  margin-top: 0;
+  background: white;
+  text-align: center;
+}
+
+#nossa-grafica .grafica-icon {
+  font-size: 80px;
+  padding-top: 30px;
+}
+
+#nossa-grafica h1 {
+  color: black;
+  padding: 20px 0 50px 0;
+  font-size: 50px;
+}
+
+#nossa-grafica .title-inicio-grafica {
+  color: #70a592;
+}
+
+#nossa-grafica p {
+  color: black;
+  padding: 0 20px 60px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+#nossa-grafica .p-grafica {
+  font-weight: bold;
+  color: #70a592;
+}
+
 /* page, quem somos */
 
-#quem-Somos .bg-quem-somos {
+#quem-somos .bg-quem-somos {
   background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
   padding: 210px;
   position: relative;
 }
 
-#quem-Somos .bg-quem-somos::before {
+#quem-somos .bg-quem-somos::before {
   content: "";
   position: absolute;
   top: 0;
@@ -158,7 +196,6 @@ header ul li a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  mix-blend-mode: multiply;
 }
 
 .bg-quem-somos h1 {
@@ -169,7 +206,6 @@ header ul li a:hover {
   align-items: center;
   color: white;
   position: relative;
-  z-index: 1;
 }
 
 /* containers quem somos */
@@ -238,4 +274,13 @@ header ul li a:hover {
   border-style: outset ridge;
   padding: 40px 40px 80px;
   border-radius: 10px;
+}
+
+/* page, nossos serviços */
+
+#servicos .title-servicos {
+  background: url(./assets/serviços.jpg) no-repeat top center/ cover;
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 0 50px 0;
 }
