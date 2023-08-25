@@ -143,6 +143,7 @@ header ul li a:hover {
 
 /* page, nossa gráfica */
 #nossa-grafica {
+  background-color: #08090a;
   padding: 50px 40px;
 }
 
@@ -201,11 +202,9 @@ header ul li a:hover {
 }
 
 .bg-quem-somos h1 {
-  display: flex;
   font-size: 60px;
   margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: white;
   position: relative;
 }
@@ -232,7 +231,7 @@ header ul li a:hover {
 }
 
 #container-quem-somos p {
-  text-align: left;
+  text-align: justify;
   padding-top: 15px;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
@@ -279,6 +278,9 @@ header ul li a:hover {
 }
 
 /* page, nossos serviços */
+#servicos {
+  background-color: #04050f;
+}
 
 #servicos .bg-servicos {
   background: url(./assets/mao_globo.jpg) no-repeat top center/ cover;
@@ -298,11 +300,9 @@ header ul li a:hover {
 }
 
 .bg-servicos h1 {
-  display: flex;
   font-size: 60px;
   margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: white;
   position: relative;
 }
@@ -312,21 +312,88 @@ header ul li a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  margin: 60px 200px;
-  border: 2px solid black;
+  margin: 60px 200px 0px;
+  border: 1px solid black;
   border-radius: 10px;
   background-color: white;
   color: black;
   text-align: center;
   list-style: none;
-  padding: 30px 30px;
+  padding: 30px 0px 0px;
+}
+
+.lista-servico .title-produtos {
+  font-size: 25px;
+  padding: 0px 10px 20px 0px;
+  color: black;
+}
+
+.lista-servico .icon-servico {
+  margin-right: 10px;
+}
+
+.lista-servico p {
+  font-size: 17px;
+  padding: 0px 20px 20px;
+  color: black;
 }
 
 .lista-servico .fim-servico {
-  display: flex;
-  border: 3px solid black;
-  padding: 40px;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 20px 40px;
   font-weight: bold;
-  background-color: black;
+  color: black;
+}
+
+.lista-servico .icon-fim-servico {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+/* page, contato */
+
+#bg-contato-orcamento {
+  background: url(./assets/serviços.jpg) no-repeat top center/ cover;
+  padding: 300px 0;
+  height: 100vh;
+  position: relative;
+}
+
+#bg-contato-orcamento::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#contato-orcamento .title-contato-orcamento {
+  font-size: 60px;
+  margin-bottom: 50px;
+  text-align: center;
   color: white;
+  position: relative;
+}
+
+#container-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin: 40px 350px 0px;
+  padding: 20px 0px;
+  border-radius: 8px;
+}
+
+#container-contato h2 {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+#container-contato ul {
+  list-style: none;
+  padding-right: 120px;
 }
