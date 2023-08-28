@@ -19,7 +19,6 @@ CEDEBD verde mto claro
 body {
   height: 100vh;
 }
-
 /* page */
 .page {
   width: 100%;
@@ -72,23 +71,23 @@ header ul li a:hover {
 
 /* contact header */
 
-.call-icon {
+header .call-icon {
   font-size: 20px;
   padding-left: 25px;
   color: #faf1e4;
 }
 
-.number {
+header .number {
   color: #faf1e4;
   font-weight: bold;
 }
-.wpp-icon {
+header .wpp-icon {
   font-size: 21px;
   color: #faf1e4;
   padding-left: 40px;
 }
 
-.number-wpp {
+header .number-wpp {
   color: #faf1e4;
   font-weight: bold;
   padding-right: 20px;
@@ -97,9 +96,18 @@ header ul li a:hover {
 /* page, inicio */
 
 /* para escurecer um wallpaper de uma pagina, diga que a posição dela é relativa e em seguida faça um before do item (antes dele) e diga que a posição dele é absoluta (vai ser absoluta em relação somente ao wallpaper por ter aplicado uma posição relativa a ele), coloque um content vazio (content: "";) para que o conteudo do item seja vazio e apenas a cor que será aplicada, de um top e left 0 para aplicat o escurecimento em cima, embaixo e nas laterais, diga que ele vai ocupar 100% de altura e largura do seu wallpaper e dai você pode aplicar a transparencia/escurecimento no item com um rgba no final dele escurecendo o item. Após isso apenas aplique um position relative nos seus textos para que o escurecimento não se aplique a eles também.  */
+#inicio {
+  display: flex;
+  width: 100%;
+}
+
 #inicio .bg-inicio {
   background: url(./assets/wallpaper-inicio.jpg) no-repeat top center/ cover;
-  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: relative;
   height: 100vh;
 }
@@ -119,7 +127,7 @@ header ul li a:hover {
   text-align: center;
   font-size: 50px;
   margin-bottom: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -131,7 +139,8 @@ header ul li a:hover {
   color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
+  padding: 30px;
   line-height: 30px;
   padding-bottom: 40px;
   position: relative;
@@ -145,6 +154,8 @@ header ul li a:hover {
 #nossa-grafica {
   background-color: #08090a;
   padding: 50px 40px;
+  display: flex;
+  width: 100%;
 }
 
 #nossa-grafica .bg-nossa-grafica {
@@ -186,7 +197,10 @@ header ul li a:hover {
 
 #quem-somos .bg-quem-somos {
   background: url(./assets/wallpaper4.jpg) no-repeat top center/ cover;
-  padding: 300px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: relative;
   height: 100vh;
 }
@@ -213,6 +227,9 @@ header ul li a:hover {
 
 #container-quem-somos {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 48px 40px 60px;
   gap: 30px;
 }
@@ -244,7 +261,7 @@ header ul li a:hover {
 }
 #container-quem-somos .container-equipe {
   border: 1px #183d3d;
-  border-style: outset ridge;
+  border-style: solid ridge;
   padding: 40px;
   border-radius: 10px;
 }
@@ -257,7 +274,7 @@ header ul li a:hover {
 
 #container-quem-somos .container-filosofia {
   border: 1px;
-  border-style: solid outset;
+  border-style: solid ridge;
   padding: 40px;
   border-radius: 10px;
   background-color: black;
@@ -272,9 +289,10 @@ header ul li a:hover {
 
 #container-quem-somos .container-conduta {
   border: 1px #183d3d;
-  border-style: outset ridge;
-  padding: 40px 40px 80px;
+  border-style: solid ridge;
+  padding: 40px;
   border-radius: 10px;
+  margin-right: 76px;
 }
 
 /* page, nossos serviços */
@@ -370,11 +388,6 @@ header ul li a:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
-#bg-lista-contato {
-  background-color: #0b1221;
-  padding: 50px 0px;
-}
-
 #contato-orcamento .title-contato-orcamento {
   font-size: 60px;
   margin-bottom: 50px;
@@ -383,31 +396,53 @@ header ul li a:hover {
   position: relative;
 }
 
+#bg-lista-contato {
+  background-color: #0b1221;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#map-box-contato {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#map-box-contato iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 #container-contato {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
+  height: 300px;
   border: 1px solid black;
-  margin: 40px 350px 0px;
-  padding: 20px 0px;
   border-radius: 8px;
   background-color: #06070d;
   color: white;
 }
 
 #container-contato h2 {
-  padding-bottom: 10px;
+  padding: 10px 0px;
   font-size: 30px;
 }
 
 #container-contato ul {
   list-style: none;
-  padding-right: 120px;
+  padding-right: 30px;
 }
 
 #container-contato ul li {
-  padding: 7px 140px 7px 0px;
-  font-size: 17px;
+  padding: 12px 0px 18px 0px;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
 }
@@ -415,11 +450,47 @@ header ul li a:hover {
 #container-contato ul li .icon-contato {
   font-size: 22px;
   padding-right: 20px;
+  padding-left: 12px;
 }
 
 /* page, footer */
 
 footer {
-  display: flex;
-  justify-content: space-between;
+  padding: 12px;
+  background-color: #05071a;
+  color: white;
 }
+
+#content-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-footer .logo-page {
+  width: 90px;
+}
+
+#content-footer p {
+  font-size: 12px;
+}
+
+/* page, icon wpp fixed */
+#button-wpp-fixed {
+  display: flex;
+}
+
+.icon-wpp-fixed {
+  position: fixed;
+  bottom: 26px;
+  right: 20px;
+  background-color: #70a592;
+  border-radius: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* medias responsives */

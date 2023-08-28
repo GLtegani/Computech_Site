@@ -287,13 +287,23 @@
             <h1 class="title-contato-orcamento">Contato</h1>
           </div>
           <div id="bg-lista-contato">
+            <div id="map-box-contato">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4349.895539998131!2d-46.77589593044205!3d-23.53928159403181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff6cd3be0eb3%3A0xf775c95df486f5b8!2sR.%20Narciso%20Sturlini%2C%2062%20-%207%C2%B0%20Andar%20-%20Sala%20706%20-%20Centro%2C%20Osasco%20-%20SP%2C%2006018-090!5e0!3m2!1spt-BR!2sbr!4v1693233442408!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
             <div id="container-contato">
               <h2>Fale Conosco</h2>
               <ul>
                 <li>
                   <ion-icon class="icon-contato" name="home-sharp"></ion-icon>
                   R. Narciso Sturlini, 62 - 7° Andar - Sala 706 Centro - Osasco
-                  - SP
                 </li>
                 <li>
                   <ion-icon class="icon-contato" name="mail-sharp"></ion-icon>
@@ -316,16 +326,24 @@
         </section>
         <!-- footer -->
         <footer>
-          <img
-            class="logo-page"
-            src="./assets/Logo_Site_tranparente.png"
-            alt="Logo da empresa Computech Solutions"
-          />
-          <p>
-            &copy; Copyright 2023 - Computech Solutions - Todos os direitos
-            reservados.
-          </p>
+          <div id="content-footer">
+            <p>
+              &copy; Copyright 2023 - Computech Solutions - Todos os direitos
+              reservados.
+            </p>
+          </div>
         </footer>
+
+        <!-- wpp icon fixed -->
+        <span id="wpp-container-fixed">
+          <a href="https://wa.me/5511948148960" target="_blank"
+            ><button id="button-wpp-fixed">
+              <ion-icon
+                class="icon-wpp-fixed"
+                name="logo-whatsapp"
+              ></ion-icon></button
+          ></a>
+        </span>
       </main>
     </section>
   </body>
