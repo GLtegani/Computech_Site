@@ -22,9 +22,6 @@ body {
 /* page */
 .page {
   width: 100%;
-  max-width: 588px;
-  margin: auto;
-  padding: auto;
 }
 
 /* header */
@@ -42,6 +39,7 @@ header #header-itens {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 
 header .logo-page {
@@ -231,10 +229,9 @@ header .number-wpp {
 
 #container-quem-somos {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 48px 40px 60px;
+  margin: 48px 40px;
   gap: 30px;
 }
 
@@ -256,7 +253,7 @@ header .number-wpp {
   padding-top: 15px;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 28px;
 }
 /* container equipe */
 
@@ -265,9 +262,9 @@ header .number-wpp {
 }
 #container-quem-somos .container-equipe {
   border: 1px #183d3d;
-  border-style: solid ridge;
-  padding: 40px;
+  border-style: solid;
   border-radius: 10px;
+  padding: 34px;
 }
 
 /* container filosofia */
@@ -278,11 +275,11 @@ header .number-wpp {
 
 #container-quem-somos .container-filosofia {
   border: 1px;
-  border-style: solid ridge;
-  padding: 40px;
+  border-style: solid;
   border-radius: 10px;
   background-color: black;
   color: white;
+  padding: 34px;
 }
 
 /* container conduta*/
@@ -293,20 +290,24 @@ header .number-wpp {
 
 #container-quem-somos .container-conduta {
   border: 1px #183d3d;
-  border-style: solid ridge;
-  padding: 40px;
+  border-style: solid;
   border-radius: 10px;
-  margin-right: 76px;
+  padding: 34px;
 }
 
 /* page, nossos serviços */
 #servicos {
   background-color: #04050f;
+  padding-bottom: 50px;
 }
 
 #servicos .bg-servicos {
   background: url(./assets/mao_globo.jpg) no-repeat top center/ cover;
-  padding: 300px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: relative;
   height: 100vh;
 }
@@ -323,6 +324,8 @@ header .number-wpp {
 
 .bg-servicos h1 {
   font-size: 60px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
   text-align: center;
   color: white;
@@ -334,7 +337,7 @@ header .number-wpp {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  margin: 60px 200px 0px;
+  margin: 60px 200px 20px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
@@ -377,7 +380,11 @@ header .number-wpp {
 
 #bg-contato-orcamento {
   background: url(./assets/serviços.jpg) no-repeat top center/ cover;
-  padding: 300px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -498,3 +505,102 @@ footer {
 }
 
 /* medias responsives */
+
+/* tablets */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  header {
+    width: 100%;
+    padding: 6px 10px 10px 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  header .logo-page {
+    width: 90px;
+    padding-left: 20px;
+  }
+
+  header ul {
+    padding-left: 15px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+  }
+
+  header nav {
+    padding-right: 30px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  header .call-icon {
+    font-size: 14px;
+    padding-left: 25px;
+    color: #faf1e4;
+  }
+
+  header .number {
+    color: #faf1e4;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  header .wpp-icon {
+    font-size: 16px;
+    color: #faf1e4;
+    padding-left: 20px;
+  }
+
+  header .number-wpp {
+    color: #faf1e4;
+    font-weight: bold;
+    padding-right: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* container */
+
+  #container-quem-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* contato */
+
+  #container-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+
+  #container-contato ul li {
+    padding: 12px 0px 16px 0px;
+    font-size: 12px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container-contato ul li .icon-contato {
+    font-size: 17px;
+    padding-right: 17px;
+  }
+
+  /* wpp fixed */
+
+  .icon-wpp-fixed {
+    font-size: 24px;
+  }
+}
+
+/* celulares */
+
+@media screen and (min-width: 360px) {
+}
