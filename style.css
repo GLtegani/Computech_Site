@@ -624,19 +624,19 @@ footer {
   header nav {
     padding-right: 0px;
     padding-left: 4px;
-    font-size: 7px;
+    font-size: 8px;
     white-space: nowrap;
   }
 
   header .call-icon {
-    font-size: 9px;
+    font-size: 10px;
     padding-left: 0px;
   }
 
   header .number {
-    font-size: 7px;
+    font-size: 8px;
     white-space: nowrap;
-    margin-right: 58px;
+    margin-right: 52px;
   }
   header .wpp-icon {
     display: none;
