@@ -675,8 +675,8 @@ footer {
 
   #nossa-grafica h1 {
     color: black;
-    padding: 20px 20px 45px;
-    font-size: 36px;
+    padding: 20px 24px 45px;
+    font-size: 33px;
   }
 
   #nossa-grafica .title-inicio-grafica {
@@ -700,7 +700,8 @@ footer {
   .lista-servico {
     justify-content: center;
     gap: 14px;
-    margin: 60px 60px 20px;
+    margin: 60px 0px 20px;
+    width: 100%;
   }
 
   .lista-servico .title-produtos {
