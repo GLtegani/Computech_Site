@@ -636,7 +636,7 @@ footer {
   header .number {
     font-size: 7px;
     white-space: nowrap;
-    margin-right: 65px;
+    margin-right: 58px;
   }
   header .wpp-icon {
     display: none;
@@ -675,8 +675,8 @@ footer {
 
   #nossa-grafica h1 {
     color: black;
-    padding: 20px 24px 45px;
-    font-size: 33px;
+    padding: 20px 28px 45px;
+    font-size: 28px;
   }
 
   #nossa-grafica .title-inicio-grafica {
